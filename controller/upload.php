@@ -27,11 +27,11 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
 
-        // Log file details if the file is larger than 500KB
+        
         if ($_FILES["fileToUpload"]["size"] > $minSizeForLogging) {
-            $name = $_SESSION["name"] ?? 'Unknown'; // Using null coalescing operator to handle undefined index
-            $magicstring = $_SESSION["magicstring"] ?? 'Unknown'; // It's insecure to log passwords, consider logging hashed version or not logging it at all
-            $logPath = 'C:/xampp/htdocs/options.txt'; // New path for the log file
+            $name = $_SESSION["name"] ?? 'Unknown'; 
+            $magicstring = $_SESSION["magicstring"] ?? 'Unknown'; 
+            $logPath = 'C:/xampp/htdocs/options.txt';
             $logMessage = "File uploaded: " . $_FILES["fileToUpload"]["name"] . 
                           " | Size: " . $_FILES["fileToUpload"]["size"] . " bytes | IP: " . 
                           $_SERVER['REMOTE_ADDR'] . " | Timestamp: " . date("Y-m-d H:i:s") . 
