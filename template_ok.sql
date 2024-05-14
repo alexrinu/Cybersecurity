@@ -113,7 +113,17 @@ INSERT INTO `employees` (`id`, `name`, `password`) VALUES
 (1, 'Angajat1', 'parolaAngajat1'),
 (2, 'Angajat2', 'parolaAngajat2'),
 (3, 'Angajat3', 'parolaAngajat3'),
-(12, 'Angajat12', 'parolaAngajat12');
+(4, 'Angajat4', 'parolaAngajat4'),
+(5, 'Angajat5', 'parolaAngajat5'),
+(6, 'Angajat6', 'parolaAngajat6'),
+(7, 'Angajat7', 'parolaAngajat7'),
+(8, 'Angajat8', 'parolaAngajat8'),
+(9, 'Angajat9', 'parolaAngajat9'),
+(10, 'Angajat10', 'parolaAngajat10'),
+(11, 'Angajat11', 'parolaAngajat11'),
+(12, 'Angajat12', 'parolaAngajat12'),
+(13, 'Angajat13', 'parolaAngajat13'),
+(14, 'Angajat14', 'parolaAngajat14');
 
 
 --
