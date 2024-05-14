@@ -4,7 +4,7 @@ $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $fileType = pathinfo($target_file, PATHINFO_EXTENSION);
-$minSizeForLogging = 500000; // Minimum file size in bytes for logging (500KB)
+$minSizeForLogging = 500000; 
 
 if (file_exists($target_file)) {
     echo "Sorry, file already exists.";
