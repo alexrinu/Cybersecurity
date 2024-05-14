@@ -1,0 +1,71 @@
+
+
+<html>
+    
+    <style>   
+    
+
+body {
+  font: 13px/20px "Open Sans", Tahoma, Verdana, sans-serif;
+  color:white;
+}
+         
+/* === Login styles === */
+.login {
+  position: relative;
+  margin: 100px auto;
+  width: 370px;
+  height: 235px;
+  background: black;
+  border-radius: 3px;
+}
+.login:before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  bottom: -18px;
+  left: -18px;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+}
+
+    </style>
+  <body background="backg1.jpg">
+
+      
+      
+    <head>
+    	<title>Add an appointment</title>
+	</head>
+	<body>
+        <pre> <center><h1>Programari Inmatriculari DRPCIV</h1></center></pre>
+        <center><h2>Add an appointment</h2></center> 
+        
+      
+		<form class="login" method="post" action="/controller/addAppointment.php">
+            <fieldset>
+            <dl>
+                  <b><dt>User ID</dt></b>
+        
+					<dd>
+			<input type="text" name="user_id">
+			<br/><br/>
+                </dd>  
+                  <b><dt>Location ID</dt></b>
+        
+					<dd>
+			<input type="text" name="location_id">
+                        <br/><br/>
+			</dd>
+                 <b><dt>Appointment date</dt></b>
+				<dd>
+                    <input type="text" name="data"></dd>
+                    </dl>
+			<button type="submit" name="submit">Submit</button>
+            </fieldset>
+		</form>
+          
+	</body>
+</html>
